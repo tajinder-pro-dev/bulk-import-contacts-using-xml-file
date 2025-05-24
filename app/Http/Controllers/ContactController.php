@@ -57,6 +57,7 @@ class ContactController extends Controller
             ContactModel::create([
                 'name' => (string) $contact->name,
                 'phone' => (string) $contact->phone,
+                'file_path' => 'files/xml/' . $randomFilename,
             ]);
         }
 
